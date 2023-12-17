@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FORM.CSS" >
+    <title>RESPONSIVE REGISTRATION FORM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+            <form action="/submission.html" >
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" id="fullname" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Father's name</span>
+                        <input type="text" id="father" placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Mother's Name</span>
+                        <input type="text" id="mother" placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">E-Mail Id</span>
+                        <input type="text" id="mail" placeholder="Enter your Mail" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" id="number" placeholder="Enter your Number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" id="password" placeholder="password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" id="repeatpassword" placeholder="Repeat Pasword" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category" id="gender">
+                        <label for="dot-1" class="one">
+                            <input type="radio" value="Male" name="category" id="dot-1">Male
+                        </label>
+                        <label for="dot-2" class="two">
+                            <input type="radio" value="Female" name="category" id="dot-2">Female
+                        </label>
+                        <label for="dot-3" class="three">
+                            <input type="radio" value="Prefer not to say" name="category" id="dot-3">Prefer not to say
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register" onclick="validateForm()">
+                </div>
+            </form>
+    </div>
+    <script src="/JS.js"></script>
+</body>
+</html>
